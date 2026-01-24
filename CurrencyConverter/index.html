@@ -1,49 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
+
     <link rel="stylesheet" href="style.css">
+    <!-- IMPORTANT -->
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <div class="container">
-        <h2>Currency converter</h2>
+        <h2>Currency Converter</h2>
+
         <div class="currencyContainer">
-            <select name="" id="Currency-first">
+            <select id="Currency-first">
                 <option value="AUD">AUD</option>
-                <option value="AUD">CAD</option>
+                <option value="CAD">CAD</option>
                 <option value="EUR">EUR</option>
                 <option value="GBP">GBP</option>
                 <option value="INR">INR</option>
                 <option value="JPY">JPY</option>
                 <option value="USD" selected>USD</option>
             </select>
-            <input type="number" id="worth-first" value="1" min="0">
 
+            <input type="number" id="worth-first" value="1" min="1">
         </div>
+
         <div class="currencyContainer">
-            <select name="" id="Currency-second">
+            <select id="Currency-second">
                 <option value="AUD">AUD</option>
-                <option value="AUD">CAD</option>
+                <option value="CAD">CAD</option>
                 <option value="EUR">EUR</option>
                 <option value="GBP">GBP</option>
                 <option value="INR" selected>INR</option>
                 <option value="JPY">JPY</option>
                 <option value="USD">USD</option>
             </select>
+
             <input type="number" id="worth-second" value="1" min="0" disabled>
-
         </div>
-        <p class="exchange-rate" id="exchange-rate">1USD = 138.5802 JPY</p>
 
-
-
-
+        <p class="exchange-rate" id="exchange-rate">Loading...</p>
     </div>
-    <script src="script.js"></script>
 </body>
-
 </html>
