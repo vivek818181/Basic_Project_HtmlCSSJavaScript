@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap');
+
+body {
+    margin: 0;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+     font-family: "Permanent Marker", cursive;
+}
+
